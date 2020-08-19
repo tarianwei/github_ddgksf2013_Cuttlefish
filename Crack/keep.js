@@ -1,6 +1,6 @@
 /*
 *[rewrite_remote]
-*^https:\/\/api\.gotokeep\.com\/* url script-response-body keep.js
+*^https:\/\/api\.gotokeep\.com\/* url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/keep.js
 *[mimt]
 *hostname = api.gotokeep.com
 */
