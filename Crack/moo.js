@@ -1,4 +1,6 @@
-
+/*
+Unlocks by cuttlefish 公众号：墨鱼手记
+*/
 
 re('"userType":\\d@"radishQty":\\d','"userType":2@"radishQty":999')
 
