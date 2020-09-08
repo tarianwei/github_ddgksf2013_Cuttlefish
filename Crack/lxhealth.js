@@ -1,5 +1,7 @@
 /*
 Unlocks by iepngs
+add cron script tsak:
+0 9 * * * https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/lxhealth.js
 */
 const $hammer = (() => {
     const isRequest = "undefined" != typeof $request,
