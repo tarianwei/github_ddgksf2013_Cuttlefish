@@ -10,7 +10,7 @@
 // ==KeyExplain==
 // @Function          text.replace(regexp/substr,replacement)
 // @key1              待替换的关键字段1
-// @key2              待替换的关键字段1
+// @key2              待替换的关键字段2
 // @originalValue     字段key对应的原始value
 // @replaceValue      字段key替换之后的value
 // @/g                正则匹配时匹配多个key键值
