@@ -5,7 +5,7 @@
 // @WechatID          公众号墨鱼手记
 // @UpdateTime        20200921
 // @Explain           #网抑云 #随缘维护
-// @ScriptURL         https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Server/Netease.conf
+// @ScriptURL         https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Server/Netease.list
 // ==/UserScript==
 
 shadowsocks=163.plusmedia.xeton.dev:58080, method=rc4-md5, password=ieG9l1nte5eo7IBZas84jLi, fast-open=false, udp-relay=false, tag=网易云音乐1
