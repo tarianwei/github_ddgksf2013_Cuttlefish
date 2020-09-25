@@ -1,4 +1,6 @@
 /*
+！！！！20200925 glados改变策略，只能绑定TG进行签到，因此本脚本不再适用自动化签到！！！！
+
 注册地址：https://github.com/glados-network/GLaDOS
 
 激活码：QHU6W-Q7UDJ-N4CHO-HCUGU
