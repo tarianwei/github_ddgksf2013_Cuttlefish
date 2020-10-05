@@ -1,0 +1,9 @@
+// ==UserScript==
+// @Name              Quan.list
+// @Author            Cuttlefish
+// @Tg group          https://t.me/ddgksf2013
+// @WechatID          公众号墨鱼手记
+// @UpdateTime        20201005
+// @Explain           每天更新节点，临时应急使用
+// @ScriptURL         https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Server/Quan.list
+// ==/UserScript==
