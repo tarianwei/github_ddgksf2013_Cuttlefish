@@ -1,12 +1,12 @@
 // ==UserScript==
 // @Name              QX 解锁网易云服务器
-// @Author            普拉斯影业
-// @Tg group          https://t.me/Plus_Movie_Best
-// @WechatID          Plusisbest
-// @UpdateTime        20200921
-// @Explain           #网抑云 #随缘维护
+// @Author            Cuttlefish
+// @Tg group          https://t.me/ddgksf2013
+// @WechatID          公众号墨鱼手记
+// @UpdateTime        20201006
+// @Explain           #网抑云 
 // @ScriptURL         https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Server/Netease.list
 // ==/UserScript==
 
-shadowsocks=163.plusmedia.xeton.dev:58080, method=rc4-md5, password=ieG9l1nte5eo7IBZas84jLi, fast-open=false, udp-relay=false, tag=网易云音乐1
-shadowsocks=163.plusmedia.xeton.dev:58081, method=rc4-md5, password=ieG9l1nte5eo7IBZas84jLi, fast-open=false, udp-relay=false, tag=网易云音乐2
+
+http=106.52.127.72:19951, over-tls=false, fast-open=false, udp-relay=false, tag=网易云音乐🎵
