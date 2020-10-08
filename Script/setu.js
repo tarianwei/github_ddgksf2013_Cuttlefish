@@ -7,7 +7,7 @@
 // @Appreciation      觉得不错👏去公众号菜单栏赞助我喝杯🥤
 // @OriginURL         https://api.lolicon.app/#/setu
 // @Quota             300次/天
-// @ScriptURL         https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Conf/Quan_crack.conf
+// @ScriptURL         https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/setu.js
 // ==/UserScript==
 
 let userApikey   = '' //请在 Telegram 内使用 @loliconApiBot 申请
