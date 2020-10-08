@@ -10,7 +10,7 @@
 // @ScriptURL         https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Conf/Quan_crack.conf
 // ==/UserScript==
 
-let userApikey   = '' //请在 Telegram 内使用 @loliconApiBot 申请，
+let userApikey   = '' //请在 Telegram 内使用 @loliconApiBot 申请
 let userR18      = 2 //18禁为1 非为0 2是混合
 let userKeyword  = ''//搜索关键字
 let userNum      = 1 //一次返回的结果数量，范围为1到10
@@ -26,11 +26,10 @@ $task.fetch(request).then(response => {
 	{
 		let pictureURL = encodeURI(obj.data[0].url);
 		console.log(pictureURL);
-		$notify("每日色图", "", "", {'open-url':pictureURL,'media-url':pictureURL}); // Success
+		$notify("每日色图", "", "元气满满", {"open-url":pictureURL,"media-url":pictureURL}); // Success
 	}
 	else
 	{
 		 $notify("Title", "Subtitle", reason.error); // Error!
 	}
-}
-$done({});
+})
