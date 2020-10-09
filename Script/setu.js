@@ -5,7 +5,7 @@
 // @WechatID          公众号墨鱼手记
 // @UpdateTime        20201008
 // @Appreciation      觉得不错👏去公众号菜单栏赞助我喝杯🥤
-// @OriginURL         https://api.lolicon.app/#/setu
+// @WebURL         https://api.lolicon.app/#/setu
 // @Quota             300次/天
 // @ScriptURL         https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/setu.js
 // ==/UserScript==
