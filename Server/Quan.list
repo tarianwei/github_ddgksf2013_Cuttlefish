@@ -1,3 +1,7 @@
 http=a1.ap.fastqvpn.com:29980, username=359719451865645056, password=3de38b27-6a38-4c7a-be77-54921b019921, over-tls=true, tls-verification=true, fast-open=false, udp-relay=false, tag=一键连-5056
 
-http=a1.ap.fastqvpn.com:29980, username= 366889075040321536, password= 6c9dc5ea-1279-4ec3-8011-400e5a3886cc, over-tls=true, tls-verification=true, tls-host=a1.ap.fastqvpn.com, fast-open=false, udp-relay=false, tag=一键连-8236
+shadowsocks=p5.22332e.com:8333, method=rc4-md5, password=passfw2xs4e!, fast-open=false, udp-relay=false, tag=闪电⚡️-TW—LTribe
+
+shadowsocks=p3.22332e.com:8333, method=rc4-md5, password=passfw2xs4e!, fast-open=false, udp-relay=false, tag=闪电⚡️-JP—LTribe
+
+shadowsocks=p2.22332e.com:8333, method=rc4-md5, password=passfw2xs4e!, fast-open=false, udp-relay=false, tag=闪电⚡️-US—LTribe
