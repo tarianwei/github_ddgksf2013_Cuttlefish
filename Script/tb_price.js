@@ -3,6 +3,10 @@
 # @author: yichahucha
  */
 
+/*
+README：https://github.com/yichahucha/surge/tree/master
+ */
+
 const $tool = new Tool()
 const path1 = "/amdc/mobileDispatch"
 const path2 = "/gw/mtop.taobao.detail.getdetail"
@@ -187,7 +191,7 @@ function priceSummary(data) {
 
 function historySummary(single) {
     const rexMatch = /\[.*?\]/g;
-    const rexExec = /\[(.*),(.*),"(.*)"\]/;
+    const rexExec = /\[(.*),(.*),"(.*)".*\]/;
     let currentPrice, lowest60, lowest180, lowest360
     let list = single.jiagequshiyh.match(rexMatch);
     list = list.reverse().slice(0, 360);
