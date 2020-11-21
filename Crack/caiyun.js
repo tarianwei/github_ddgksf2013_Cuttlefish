@@ -1,7 +1,7 @@
 /**
  * [MITM]
  * hostname = biz.caiyunapp.com
- * 
+ * Author Github: https://github.com/blackmatrix7
  * [Script]
  * 彩云天气_SVIP = type=http-response,requires-body=1,max-size=0,pattern=https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user),script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/caiyun/caiyun_svip.js
  * 
