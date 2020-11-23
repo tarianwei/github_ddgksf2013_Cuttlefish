@@ -15,3 +15,6 @@ http=block4music.poetyin.me:39000, over-tls=false, fast-open=false, udp-relay=fa
 
 http=3music.poetyin.me:100, over-tls=false, fast-open=false, udp-relay=false, tag=网易云音乐3
 
+http=music.lolico.me:39000, over-tls=false, fast-open=false, udp-relay=false, tag=网易云音乐4
+
+http=taron.top:100, over-tls=false, fast-open=false, udp-relay=false, tag=网易云音乐5
