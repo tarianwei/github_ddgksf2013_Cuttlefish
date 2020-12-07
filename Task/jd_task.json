@@ -33,6 +33,8 @@
     "10 0 * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_kd.js, tag=京东快递签到",
     "10 0 * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_split.js,tag=年终奖",
     "10 7 * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_car.js, tag=京东汽车",
-    "10 0 * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_health.js,tag=健康抽奖机"
+    "10 0 * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_health.js,tag=健康抽奖机",
+    "0 0,9,11,13,15,17,19,20,21,23 * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_live_redrain.js, tag=直播红包雨",
+    "10 7 * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_digital_floor.js, tag=数码加购京豆"
   ]
 }
