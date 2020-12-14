@@ -1,6 +1,6 @@
 
 
-re('"excitationAd":"\\d"@"Ad":"\\d"@ad":true','"excitationAd":"0"@"Ad":"0"@ad":false')
+re('"excitationAd":"\\d"@Ad":"\\d"@ad":true@AdId":"[^"]*"','"excitationAd":"0"@Ad":"0"@ad":false@AdId":""')
 
 function re() {
  var body = $response.body;
