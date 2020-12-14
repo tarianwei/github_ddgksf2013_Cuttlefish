@@ -1,4 +1,6 @@
-
+/*
+Unlocks by Cuttlefish 公众号：墨鱼手记
+*/
 
 re('"excitationAd":"\\d"@Ad":"\\d"@ad":true@AdId":"[^"]*"','"excitationAd":"0"@Ad":"0"@ad":false@AdId":""')
 
