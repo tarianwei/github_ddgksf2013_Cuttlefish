@@ -2,7 +2,7 @@
 Unlocks by Cuttlefish 公众号：墨鱼手记
 */
 
-re('"excitationAd":"\\d"@Ad":"\\d"@ad":true@AdId":"[^"]*"','"excitationAd":"0"@Ad":"0"@ad":false@AdId":""')
+re('"excitationAd":"\\d"@Ad":"\\d"@ad":true@AdId":"[^"]*"@adid":"[^"]*"','"excitationAd":"0"@Ad":"0"@ad":false@AdId":""@adid":""')
 
 function re() {
  var body = $response.body;
