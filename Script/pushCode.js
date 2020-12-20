@@ -1,6 +1,6 @@
 /*
 京东互助码提交
-更新时间：2020-12-10
+更新时间：2020-12-20
 脚本兼容: QuantumultX, Surge, Loon，小火箭
 Author: Cuttlefish
 需要将本脚本下载至本地进行编辑
@@ -24,6 +24,7 @@ $.jxfactory = '京喜工厂'
 $.bean      = '种豆得豆'
 $.farm      = '京东农场'
 $.pet       = '京东萌宠'
+$.zz        = '京东赚赚'
 
 let isGetCookie = typeof $request !== 'undefined'
 
@@ -34,6 +35,7 @@ if (!isGetCookie) {
     await execBean();
     await execFarm();
     await execPet();
+    await execZZ();
     await showmsg();
     
   })()
@@ -131,19 +133,38 @@ function execPet() {
     })
   })
 }
+function execZZ() {
+  return new Promise((resolve) => {
+    const url = { 
+       url: 'https://code.chiang.fun/api/v1/jd/jdzz/create/'+$.zz,
+       headers: {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148'},
+	}
+    $.get(url,(err, resp, data)=> {  
+      try {
+        $.zzBody = data
+        //petStatus = resp.statusCode
+      } catch (e) {
+        $.logErr(e, resp)
+      } finally {
+        resolve()
+      }
+    })
+  })
+}
 function showmsg() {
   return new Promise((resolve) => {
-  	console.log('ddfactoryBody:');
+  	console.log('东东工厂:');
   	console.log( $.ddfactoryBody);
-  	console.log('\r\njxfactoryBody:');
+  	console.log('\r\n京喜工厂:');
   	console.log( $.jxfactoryBody);
-  	console.log('\r\nbeanBody:');
+  	console.log('\r\n种豆得豆:');
   	console.log( $.beanBody);
-  	console.log('\r\nfarmBody:');
+  	console.log('\r\n京东农场:');
   	console.log( $.farmBody);
-  	console.log('\r\npetBody:');
+  	console.log('\r\n京东萌宠:');
 	console.log( $.petBody);
-
+	console.log('\r\n京东赚赚:');
+	console.log( $.zzBody);
     //$.msg($.name, $.subt,'')
     resolve()
   })
