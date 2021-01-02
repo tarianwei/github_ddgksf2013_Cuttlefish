@@ -1,3 +1,20 @@
+const body1 ='--mm_form_data_boundry
+Content-Disposition:form-data;name="data"
+
+--mm_form_data_boundry--';
+
+const body2 = `--Boundary+3C32A25CD7B91891
+Content-Disposition: form-data; name="data"
+
+RhBkKP769IGwWZxwMPUTcb0doII2KcAQtv9iqDfZONEHoE5lXSqQj/UmpgBGEMcf
+--Boundary+3C32A25CD7B91891--`;
+
+const body3 = `--Boundary+0E2797135A0E7AB4
+Content-Disposition: form-data; name="data"
+
+
+--Boundary+0E2797135A0E7AB4--`;
+
 const $ = new Env("喵喵记账")
 $.signKey = 'mmjz_userSignKey'
 
@@ -45,11 +62,7 @@ function execSignin() {
 			'User-Agent' : `喵喵记账 1.1.2 rv:2020060302 (iPhone; iOS 13.4.1; zh-Hans_HK)`,
 			'cp' : signheaders.cp
     	},
-       body: '--mm_form_data_boundry
-Content-Disposition:form-data;name="data"
-
-
---mm_form_data_boundry--'
+       body: body1
 	}
 	//console.log(JSON.stringify(url));
     $.post(url,(err, resp, data)=> { 
@@ -80,11 +93,7 @@ function execDouble() {
 			'Accept-Language' : `en-us`,
 			'cp' : signheaders.cp
     	},
-       body: '--Boundary+3C32A25CD7B91891
-Content-Disposition: form-data; name="data"
-
-RhBkKP769IGwWZxwMPUTcb0doII2KcAQtv9iqDfZONEHoE5lXSqQj/UmpgBGEMcf
---Boundary+3C32A25CD7B91891--'
+       body: body2
 	}
 	//console.log(JSON.stringify(url));
     $.post(url,(err, resp, data)=> { 
@@ -115,11 +124,7 @@ function execGetfish() {
 			'Accept-Language' : `en-us`,
 			'cp' : signheaders.cp
     	},
-       body: '--Boundary+0E2797135A0E7AB4
-Content-Disposition: form-data; name="data"
-
-
---Boundary+0E2797135A0E7AB4--'
+       body: body3
 	}
 	//console.log(JSON.stringify(url));
     $.post(url,(err, resp, data)=> { 
