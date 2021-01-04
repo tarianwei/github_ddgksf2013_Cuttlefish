@@ -66,7 +66,7 @@ function execSignin() {
 			'User-Agent' : `喵喵记账 1.1.2 rv:2020060302 (iPhone; iOS 13.4.1; zh-Hans_HK)`,
 			'cp' : signheaders.cp
     	},
-       body: body1
+       body: $.body1
 	}
 	//console.log(JSON.stringify(url));
     $.post(url,(err, resp, data)=> { 
@@ -97,7 +97,7 @@ function execDouble() {
 			'Accept-Language' : `en-us`,
 			'cp' : signheaders.cp
     	},
-       body: body2
+       body: $.body2
 	}
 	//console.log(JSON.stringify(url));
     $.post(url,(err, resp, data)=> { 
@@ -128,7 +128,7 @@ function execGetfish() {
 			'Accept-Language' : `en-us`,
 			'cp' : signheaders.cp
     	},
-       body: body3
+       body: $.body3
 	}
 	//console.log(JSON.stringify(url));
     $.post(url,(err, resp, data)=> { 
