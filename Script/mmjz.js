@@ -1,4 +1,27 @@
-
+/*
+// ==UserScript==
+// @ScriptName        喵喵记账
+// @Author            Cuttlefish
+// @Tg                https://t.me/ddgksf2013
+// @WechatID          公众号墨鱼手记
+// @UpdateTime        20210105
+// @Attention         消息体被加密
+// @ScriptFunction    自动化签到获取喵粮、喵饼、鱼干，及每天一次的免费抽奖
+// @ScriptURL         https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/mmjz.js
+// ==/UserScript==
+=================================Quantumultx=======================
+[task_local]
+15 7,15 * * * https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/mmjz.js, tag=喵喵记账
+=================================Loon==============================
+[Script]
+cron "15 7,15 * * *" script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/mmjz.js,tag=喵喵记账
+=================================Surge=============================
+[Script]
+喵喵记账 = type=cron,cronexp="15 7,15 * * *",wake-system=1,timeout=120,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/mmjz.js
+================================小火箭=============================
+[Script]
+喵喵记账 = type=cron,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/mmjz.js, cronexpr="15 7,15 * * *", timeout=500, enable=true
+*/
 const $ = new Env("喵喵记账")
 $.signKey = 'mmjz_userSignKey'
 
