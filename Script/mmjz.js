@@ -203,7 +203,7 @@ function execReward() {
             'Accept' : `*/*`,
 			'Accept-Encoding' : `gzip, deflate, br`,
 			'Connection' : `keep-alive`,
-			'Content-Type' : `multipart/form-data; boundary=Boundary+0E2797135A0E7AB4`,
+			'Content-Type' : `multipart/form-data; boundary=Boundary+26DC59CFB8C3B64D`,
 			'Host' : `meow-api.sxyj.net`,
 			'User-Agent' : `%E5%96%B5%E5%96%B5%E8%AE%B0%E8%B4%A6/2020122101 CFNetwork/1125.2 Darwin/19.4.0`,
 			'Accept-Language' : `en-us`,
