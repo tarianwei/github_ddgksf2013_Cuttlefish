@@ -10,17 +10,22 @@
 // @ScriptURL         https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/mmjz.js
 // ==/UserScript==
 =================================Quantumultx=======================
+[rewrite_local]
+https://meow-api.sxyj.net/api/Member/SignNew url script-request-header https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/mmjz.js
 [task_local]
-15 7,15 * * * https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/mmjz.js, tag=喵喵记账
+15 7,15 * * * https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/mmjz.js, tag=喵喵记账, img-url=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Icon/mmjz.png
 =================================Loon==============================
 [Script]
+http-request https://meow-api.sxyj.net/api/Member/SignNew tag=喵喵记账Cookie, script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/mmjz.js
 cron "15 7,15 * * *" script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/mmjz.js,tag=喵喵记账
 =================================Surge=============================
 [Script]
 喵喵记账 = type=cron,cronexp="15 7,15 * * *",wake-system=1,timeout=120,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/mmjz.js
+喵喵记账Cookie = type=http-request,pattern=https://meow-api.sxyj.net/api/Member/SignNew,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/mmjz.js
 ================================小火箭=============================
 [Script]
 喵喵记账 = type=cron,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/mmjz.js, cronexpr="15 7,15 * * *", timeout=500, enable=true
+喵喵记账Cookie = type=http-request,pattern=https://meow-api.sxyj.net/api/Member/SignNew,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/mmjz.js
 */
 const $ = new Env("喵喵记账")
 $.signKey = 'mmjz_userSignKey'
