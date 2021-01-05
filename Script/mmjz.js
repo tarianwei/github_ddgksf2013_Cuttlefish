@@ -38,7 +38,7 @@ cron "15 7,15 * * *" script-path=https://raw.githubusercontent.com/ddgksf2013/Cu
 
 [mitm]
 hostname = meow-api.sxyj.net
-*************************/
+*/
 
 const $ = new Env("喵喵记账")
 $.signKey = 'mmjz_userSignKey'
