@@ -40,6 +40,7 @@ cron "15 7,15 * * *" script-path=https://raw.githubusercontent.com/ddgksf2013/Cu
 hostname = meow-api.sxyj.net
 */
 
+
 const $ = new Env("喵喵记账")
 $.signKey = 'mmjz_userSignKey'
 
@@ -63,7 +64,12 @@ Content-Disposition: form-data; name="data"
 --Boundary+0E2797135A0E7AB4--
 `;
 
+const body4 = `--Boundary+26DC59CFB8C3B64D
+Content-Disposition: form-data; name="data"
 
+
+--Boundary+26DC59CFB8C3B64D--
+`;
 
 let isGetCookie = typeof $request !== 'undefined'
 
@@ -88,6 +94,7 @@ if (isGetCookie) {
     await execGetfish();
     await execGetfish();
     await execGetfish();
+    await execReward();
     await execShowmsg();
     
   })()
@@ -172,6 +179,37 @@ function execGetfish() {
 			'cp' : signheaders.cp
     	},
        body: body3
+	}
+	//console.log(JSON.stringify(url));
+    $.post(url,(err, resp, data)=> { 
+      try {
+        console.log(data);
+        signStatus = resp.statusCode
+      } catch (e) {
+        $.logErr(e, resp)
+      } finally {
+        resolve()
+      }
+    })
+  })
+}
+function execReward() {
+  return new Promise((resolve) => {
+    signheaders = JSON.parse($.getdata($.signKey)).headers;
+    
+    const url = { 
+       url: 'https://meow-api.sxyj.net/api/Game/GetTodayDrawCount',
+       headers: {
+            'Accept' : `*/*`,
+			'Accept-Encoding' : `gzip, deflate, br`,
+			'Connection' : `keep-alive`,
+			'Content-Type' : `multipart/form-data; boundary=Boundary+0E2797135A0E7AB4`,
+			'Host' : `meow-api.sxyj.net`,
+			'User-Agent' : `%E5%96%B5%E5%96%B5%E8%AE%B0%E8%B4%A6/2020122101 CFNetwork/1125.2 Darwin/19.4.0`,
+			'Accept-Language' : `en-us`,
+			'cp' : signheaders.cp
+    	},
+       body: body4
 	}
 	//console.log(JSON.stringify(url));
     $.post(url,(err, resp, data)=> { 
