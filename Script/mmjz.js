@@ -5,7 +5,7 @@
 // @Tg                https://t.me/ddgksf2013
 // @WechatID          公众号墨鱼手记
 // @UpdateTime        20210105
-// @Attention         消息体被加密
+// @Attention         因消息体被加密，故简化通知
 // @ScriptFunction    自动化签到获取喵粮、喵饼、鱼干，及每天一次的免费抽奖
 // @ScriptURL         https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/mmjz.js
 // ==/UserScript==
