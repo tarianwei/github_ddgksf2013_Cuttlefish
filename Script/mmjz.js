@@ -64,12 +64,19 @@ Content-Disposition: form-data; name="data"
 --Boundary+0E2797135A0E7AB4--
 `;
 
-const body4 = `--Boundary+26DC59CFB8C3B64D
+const body4 = `--Boundary+C2D35AE88A556F10
 Content-Disposition: form-data; name="data"
 
-
---Boundary+26DC59CFB8C3B64D--
+ittS2ZZh4ruOGvAUUZl+ehJqYol0q3NlaGn0hkBPj0fXHPTAltsrsMCjX4xBahDm
+--Boundary+C2D35AE88A556F10--
 `;
+const body5 = `--Boundary+3851900AAA43A61A
+Content-Disposition: form-data; name="data"
+
+N0b/niwcPG2AjZpD1H0gBCMQomga8W+WTFjbeT8TYomJFybdtcJu0+60rjXiGJn/
+--Boundary+3851900AAA43A61A--
+`;
+
 
 let isGetCookie = typeof $request !== 'undefined'
 
@@ -95,6 +102,10 @@ if (isGetCookie) {
     await execGetfish();
     await execGetfish();
     await execReward();
+    await execReward4();
+    await execReward4();
+    await execReward4();
+    await execReward4();
     await execShowmsg();
     
   })()
@@ -198,18 +209,49 @@ function execReward() {
     signheaders = JSON.parse($.getdata($.signKey)).headers;
     
     const url = { 
-       url: 'https://meow-api.sxyj.net/api/Game/GetTodayDrawCount',
+       url: 'https://meow-api.sxyj.net//api/Game/Accept',
        headers: {
             'Accept' : `*/*`,
 			'Accept-Encoding' : `gzip, deflate, br`,
 			'Connection' : `keep-alive`,
-			'Content-Type' : `multipart/form-data; boundary=Boundary+26DC59CFB8C3B64D`,
+			'Content-Type' : `multipart/form-data; boundary=Boundary+C2D35AE88A556F10`,
 			'Host' : `meow-api.sxyj.net`,
 			'User-Agent' : `%E5%96%B5%E5%96%B5%E8%AE%B0%E8%B4%A6/2020122101 CFNetwork/1125.2 Darwin/19.4.0`,
 			'Accept-Language' : `en-us`,
 			'cp' : signheaders.cp
     	},
        body: body4
+	}
+	//console.log(JSON.stringify(url));
+    $.post(url,(err, resp, data)=> { 
+      try {
+        console.log(data);
+        signStatus = resp.statusCode
+      } catch (e) {
+        $.logErr(e, resp)
+      } finally {
+        resolve()
+      }
+    })
+  })
+}
+function execReward4() {
+  return new Promise((resolve) => {
+    signheaders = JSON.parse($.getdata($.signKey)).headers;
+    
+    const url = { 
+       url: 'https://meow-api.sxyj.net//api/Game/Accept',
+       headers: {
+            'Accept' : `*/*`,
+			'Accept-Encoding' : `gzip, deflate, br`,
+			'Connection' : `keep-alive`,
+			'Content-Type' : `multipart/form-data; boundary=Boundary+3851900AAA43A61A`,
+			'Host' : `meow-api.sxyj.net`,
+			'User-Agent' : `%E5%96%B5%E5%96%B5%E8%AE%B0%E8%B4%A6/2020122101 CFNetwork/1125.2 Darwin/19.4.0`,
+			'Accept-Language' : `en-us`,
+			'cp' : signheaders.cp
+    	},
+       body: body5
 	}
 	//console.log(JSON.stringify(url));
     $.post(url,(err, resp, data)=> { 
