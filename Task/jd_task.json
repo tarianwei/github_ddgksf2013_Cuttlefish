@@ -3,6 +3,7 @@
   "description": "墨鱼手记",
   "task": [
     "1,7 0,20 * * * https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js, tag=野比京东, img-url=https://raw.githubusercontent.com/Orz-3/task/master/jd.png, enabled=true",
+    "0 0 * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_get_share_code.js, tag=所有脚本互助码",
     "0 0 * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_car_exchange.js, tag=京东汽车兑换, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_redPacket.png, enabled=true",
     "30 10,23 * * * https://raw.githubusercontent.com/MoPoQAQ/Script/main/Me/jx_cfd.js, tag=京喜财富岛, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jxcfd.png",
     "16 0 * * * https://raw.githubusercontent.com/Sunert/Scripts/master/Task/jingxi.js, tag=京喜签到, img-url=https://raw.githubusercontent.com/Orz-3/task/master/jingxi.png, enabled=true",
