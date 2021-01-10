@@ -3,7 +3,7 @@ var url = $request.url;
 
 if (url.indexOf('/ad/getAll') != -1) {
 	var obj = JSON.parse(body);
-	//obj.data.adList = [];
+	obj.data.adList = [];
 	body = JSON.stringify(obj);
 } else if (url.indexOf('/user/privilege/list') != -1) {
 	var obj = JSON.parse(body);
