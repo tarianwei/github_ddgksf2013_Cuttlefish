@@ -4,4 +4,4 @@
 - https://www.20hlir025.space?userid=WWCECN&t=1876  
 - 请复制上面的链接到系统浏览器中打开，无需邮箱或手机注册  
 - 代理池①: https://www.hggygdr66.tk/ (@peekfun)  
-- 代理池①: https://proxypoolss.tk/ (@free)  
+- 代理池②: https://proxypoolss.tk/ (@free)  
