@@ -3,6 +3,7 @@
   "description": "墨鱼手记",
   "task": [
     "1,7 0,20 * * * https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js, tag=野比京东, img-url=https://raw.githubusercontent.com/Orz-3/task/master/jd.png",
+    "0 0 9,12,16,20 * * * https://gitee.com/lxk0301/jd_scripts/raw/master/jd_newYearMoney_lottery.js, tag=京东压岁钱抢百元卡, img-url=https://raw.githubusercontent.com/Orz-3/task/master/jd.png",
     "20 8,12 * * * https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Task/jd_newYearMoney.js, tag=京东压岁钱, img-url=https://raw.githubusercontent.com/Orz-3/task/master/jd.png",
     "15 0 * * * https://gitee.com/lxk0301/jd_scripts/raw/master/jd_festival.js, tag=京东手机年终奖, img-url=https://raw.githubusercontent.com/yogayyy/Scripts/master/Icon/shylocks/jd_festival2.jpg, enabled=true",
     "10 7 * * * https://gitee.com/lxk0301/jd_scripts/raw/master/jd_ms.js, tag=京东秒秒币, img-url=https://raw.githubusercontent.com/yogayyy/Scripts/master/Icon/shylocks/jd_ms.jpg, enabled=true",
