@@ -1,7 +1,7 @@
 // ==UserScript==
 // @Name              QX每日色图脚本
 // @Author            Cuttlefish
-// @Tg                https://t.me/ddgksf2013
+// @TgChannel         https://t.me/ddgksf2021
 // @WechatID          公众号墨鱼手记
 // @UpdateTime        20201008
 // @Appreciation      觉得不错👏去公众号菜单栏赞助我喝杯🥤
