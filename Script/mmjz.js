@@ -2,7 +2,7 @@
 * ==UserScript==
 * @ScriptName        喵喵记账
 * @Author            Cuttlefish
-* @Tg                https://t.me/ddgksf2013
+* @TgChannel         https://t.me/ddgksf2021
 * @WechatID          公众号墨鱼手记
 * @UpdateTime        20210106
 * @Attention         因消息体被加密，故简化通知
