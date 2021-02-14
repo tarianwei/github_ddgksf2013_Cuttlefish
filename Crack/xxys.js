@@ -1,28 +1,31 @@
-/*
-更新：2020-10-15
-小小影视 unlock Vip&免广告
-感谢@GB-png，提供新方法
-QX:
-https:\/\/.*\..*\.com\/(ssp-svr\/ssp\/list3|ucp/index) url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/xxys.js
-Surge:
-http-response https:\/\/.*\..*\.com\/(ssp-svr\/ssp\/list3|ucp/index) requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/xxys.js
-MITM = *.xxjjappss.com,*.huaerdadi.com
-*/
+
+// ==UserScript==
+// @Name              小小影视 unlock Vip&免广告
+// @Download          https://www.xx9.tv
+// @Author            Cuttlefish
+// @TgChannel         https://t.me/ddgksf2021
+// @WechatID          公众号墨鱼手记
+// @UpdateTime        20210214      
+// ==/UserScript==
 
 const path1 = "/ucp/index";
-const ad = 'ssp-svr/ssp/list3';
+const path2 = "init";
+const ad = 'getGlobalData';
 let obj = JSON.parse($response.body);
 
 if ($request.url.indexOf(path1) != -1){
-	obj.data.uinfo["down_daily_remainders"] = "666";
-	obj.data.uinfo["play_daily_remainders"] = "666";
-	obj.data.uinfo["curr_group"] = "5";
 	obj.data.user["isvip"] = "1";
-	obj.data.user["goldcoin"] = "666";
+ 	obj.data.user["goldcoin"] = "666";
 }
-
+if ($request.url.indexOf(path2) != -1){
+ 	obj.data.user["isvip"] = "1";
+ 	obj.data.user["goldcoin"] = "766";
+}
 if ($request.url.indexOf(ad) != -1) {
-delete obj.data.pmap
+	delete obj.data.iOS_adgroups;
+	delete obj.data.Android_adgroups;
+	delete obj.data.sdkrows_iOS;
+	delete obj.data.sdkrows_Android;
+	obj.data.app_launch_times_adshow=-1;
 }
-
 $done({body: JSON.stringify(obj)});
