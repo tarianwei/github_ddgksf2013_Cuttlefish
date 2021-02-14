@@ -1,7 +1,6 @@
 
 // ==UserScript==
 // @Name              小小影视 unlock Vip&免广告
-// @Download          https://www.xx9.tv
 // @Author            Cuttlefish
 // @TgChannel         https://t.me/ddgksf2021
 // @WechatID          公众号墨鱼手记
