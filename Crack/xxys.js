@@ -10,7 +10,7 @@
 
 const path1 = "/ucp/index";
 const path2 = "init";
-const ad = 'getGlobalData';
+const ad = "getGlobalData";
 let obj = JSON.parse($response.body);
 
 if ($request.url.indexOf(path1) != -1){
