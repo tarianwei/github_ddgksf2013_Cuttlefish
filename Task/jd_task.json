@@ -23,7 +23,7 @@
 	"10 7 * * * https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Task/jd_crazy_joy.js, tag=crazyJoy任务, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_crazy_joy.png",
 	"10 * * * * https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Task/jd_daily_egg.js, tag=天天提鹅, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jdte.png",
 	"20 13 * * 6 https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Task/jd_get_share_code.js, tag=获取互助码, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png",
-	"0 9,12,20,21 2-22 2 * https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Task/jd_global.js, tag=环球挑战赛, img-url=https://raw.githubusercontent.com/yogayyy/Scripts/main/Icon/lxk0301/jd_global.png",
+	"0 9,12,20,21 2-22 2 * https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Task/jd_global.js, tag=环球挑战赛, img-url=img-url=https://raw.githubusercontent.com/Orz-3/task/master/jd.png",
 	"10 * * * * https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Task/jd_jdfactory.js, tag=东东工厂, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_factory.png",
 	"10 0 * * * https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Task/jd_jdzz.js, tag=京东赚赚, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jdzz.png",
 	"15 0-23/2 * * * https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Task/jd_joy.js, tag=京东宠汪汪, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jdcww.png",
