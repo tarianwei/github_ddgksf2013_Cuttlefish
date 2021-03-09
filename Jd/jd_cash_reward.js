@@ -54,11 +54,11 @@ const JD_API_HOST = `https://api.m.jd.com/client.action?functionId=cash_mob_rewa
     cookie = cookiesArr[i];
     if (cookie) {
       $.index = i + 1;
-await  QueryJDUserInfo();
-      if (i+1) console.log(`\n***************开始京东账号${i + 1}【${$.nickname}】***************`)
+//await  QueryJDUserInfo();
+      if (i+1) console.log(`\n***************开始京东账号${i + 1}***************`)
       //initial();
       
-      if (!$.isLogin)  //cookie不可用
+      if (0)  //cookie不可用
       {
         //$.setdata('', `CookieJD${i ? i + 1 : "" }`);//cookie失效，故清空cookie。
         $.msg($.name, `【提示】京东账号${i + 1} cookie已过期！请先获取cookie\n直接使用NobyDa的京东签到获取`, 'https://bean.m.jd.com/', {"open-url": "https://bean.m.jd.com/"});
@@ -105,7 +105,7 @@ function Withdraw_Cash(){
 }
 function msgShow() {
 	return new Promise(resolve => {
-    $.msg($.name, '', `【京东账号${$.index}】${$.nickname}\n${$.message}:${$.amount}`);
+    $.msg($.name, '', `【京东账号${$.index}】\n${$.message}:${$.amount}`);
     resolve()
   })
 }
