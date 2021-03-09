@@ -66,8 +66,9 @@ await  QueryJDUserInfo();
       }
       else{
         await Withdraw_Cash();
+        await msgShow();
       }
-      await msgShow();
+      
     }
   }
 })()
