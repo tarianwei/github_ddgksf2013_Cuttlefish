@@ -33,7 +33,7 @@ cron "0,1,2 0 * * *" script-path=https://raw.githubusercontent.com/ddgksf2013/Cu
 hostname = api.m.jd.com
 */
 const $ = new Env('领现金兑换红包');
-const printDetail = true;
+const printDetail = false;
 //Node.js用户请在jdCookie.js处填写京东ck;
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 let cookiesArr = [], cookie = '';
