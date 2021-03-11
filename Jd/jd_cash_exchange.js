@@ -54,7 +54,7 @@ const JD_API_HOST = `https://api.m.jd.com/client.action?functionId=cash_getRedPa
     cookie = cookiesArr[i];
     if (cookie) {
       $.index = i + 1;
-	  await  QueryJDUserInfo();
+      await  QueryJDUserInfo();
       if (i+1) console.log(`\n***************开始京东账号${i + 1}【${$.nickname}】***************`)
       //initial();  
       if (!$.isLogin)  //cookie不可用
@@ -159,9 +159,9 @@ function QueryJDUserInfo(timeout = 0) {
   return new Promise((resolve) => {
     setTimeout( ()=>{
       let url = {
-        url : `https://wq.jd.com/user/info/QueryJDUserInfo?sceneval=2`,
+        url : `https://me-api.jd.com/user_new/info/GetJDUserInfoUnion`,
         headers : {
-          'Referer' : `https://wqs.jd.com/my/iserinfo.html`,
+          'Host' : `me-api.jd.com`,
           'Cookie' : cookie
         }
       }
@@ -173,7 +173,7 @@ function QueryJDUserInfo(timeout = 0) {
             $.isLogin = false;
             return
           }
-          $.nickname = data.base.nickname;
+          $.nickname = data.data.userInfo.baseInfo.nickname;
           $.isLogin = true;
         } catch (e) {
           $.logErr(e, resp);
