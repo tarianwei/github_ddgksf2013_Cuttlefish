@@ -6,6 +6,7 @@
 * @WechatID          公众号墨鱼手记
 * @UpdateTime        20210309
 * @ScriptFunction    红包的有效期只有3天（72小时）
+* @Log               0311：更换个人信息查询的API借口
 * @ScriptURL         https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Jd/jd_cash_exchange.js
 * ==/UserScript==
 【QuantumultX】 :
