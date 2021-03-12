@@ -4,9 +4,10 @@
 * @Author            Cuttlefish
 * @TgChannel         https://t.me/ddgksf2021
 * @WechatID          公众号墨鱼手记
-* @UpdateTime        20210219
+* @UpdateTime        20210312
 * @ScriptFunction    自动化签到获取流量、签到后的抽奖
 * @DataAmount        每天签到可获取20~200M流量，其中满签最后一天可获取1~2G流量，可下个月领取使用
+* @Attention         脚本公开后，官方做了处理，Cookie有效期2天，太短，本脚本弃用
 * @ScriptURL         https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/cmccjs.js
 * ==/UserScript==
 
